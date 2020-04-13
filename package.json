@@ -1,0 +1,22 @@
+{
+  "name": "bakery-online-shopping",
+  "version": "1.0.0",
+  "description": "A bakery online shopping store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jose Arteaga",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "cssnano": "^4.1.10",
+    "gh-pages": "^2.2.0",
+    "postcss-cli": "^7.1.0",
+    "sass": "^1.26.3"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  }
+}
