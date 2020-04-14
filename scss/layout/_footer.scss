@@ -1,0 +1,24 @@
+.footer {
+  padding-top: 3em;
+  width: 75%;
+  margin: 0 auto;
+
+  &__message {
+    font-size: $footer-message-size;
+    color: $footer-color;
+    font-family: $font-stack;
+    font-weight: 800;
+    margin-bottom: 1em;
+  }
+
+  &__socialmedia {
+    width: 20%;
+  }
+
+  &__in,
+  &__fb,
+  &__tw {
+    font-size: $social-media-size;
+    color: $footer-color;
+  }
+}

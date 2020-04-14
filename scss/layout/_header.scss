@@ -1,0 +1,59 @@
+.header {
+  &__logo {
+    color: $logo-color;
+    font-family: $logo-font-stack;
+    font-size: $logo-size;
+    padding-left: 0.5em;
+
+    &::after {
+      content: '... just tasty!';
+      display: block;
+      font-size: $logo-sub-size;
+      font-family: $logo-sub-font-stack;
+      text-align: right;
+      margin-right: -40px;
+      margin-top: -5px;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    display: inline-block;
+    font-family: $font-stack;
+    color: $text-color;
+    font-size: $menu-font-size;
+    margin-right: 4em;
+    letter-spacing: 2px;
+
+    &:nth-last-child(1) {
+      margin-right: 4.5em;
+    }
+
+    &--active::after {
+      content: '';
+      display: block;
+      width: 100%;
+      margin-top: 4px;
+      padding: 3px;
+      background-color: $menu-slider-color;
+    }
+  }
+
+  &__counter {
+    &::after {
+      content: '0';
+      color: $text-color;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-right: 3em;
+      margin-left: 0.6em;
+      font-family: $font-stack;
+      font-weight: 600;
+    }
+  }
+
+  &__cart {
+    width: 50px;
+  }
+}

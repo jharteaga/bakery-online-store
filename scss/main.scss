@@ -1,1 +1,13 @@
+@import './abstract/abstract-dir';
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+
+@import './layout/layout-dir';

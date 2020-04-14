@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__socialmedia {
+    display: flex;
+    justify-content: space-between;
+  }
+}
