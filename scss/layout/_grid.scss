@@ -23,3 +23,20 @@
     justify-content: space-between;
   }
 }
+
+/********************************************/
+/*             BAKERY GRID PAGE             */
+/********************************************/
+
+.bakery {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  row-gap: 20px;
+  column-gap: 30px;
+  justify-content: center;
+
+  .bakery__row {
+    display: flex;
+    justify-content: space-between;
+  }
+}

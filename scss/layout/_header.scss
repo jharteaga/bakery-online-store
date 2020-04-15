@@ -38,6 +38,14 @@
       padding: 3px;
       background-color: $menu-slider-color;
     }
+
+    & a {
+      color: $text-color;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   &__counter {

@@ -1,0 +1,43 @@
+.bakery {
+  width: 100%;
+  padding: 1em;
+
+  &__box {
+    background-color: $body-color;
+    max-width: 265px;
+    border-radius: 17px;
+    padding-bottom: 1em;
+    font-family: $font-stack;
+    color: $text-color;
+  }
+
+  &__img {
+    max-width: 265px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+  }
+
+  &__name {
+    text-align: center;
+    padding-top: 0.3em;
+    font-weight: bold;
+  }
+
+  &__description {
+    padding: 0 1em;
+    margin-bottom: 0.5em;
+  }
+
+  &__row {
+    padding: 0 2em;
+  }
+
+  &__price {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &__cart {
+    font-size: 2rem;
+  }
+}
