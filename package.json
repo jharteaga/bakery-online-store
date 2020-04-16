@@ -6,7 +6,8 @@
   "scripts": {
     "deploy": "gh-pages -d dist/",
     "cleanup": "rm -rf .cache dist",
-    "dev": "npm run cleanup && parcel index.html"
+    "dev": "npm run cleanup && parcel index.html",
+    "prod": "npm run cleanup && parcel build index.html --public-url ."
   },
   "author": "Jose Arteaga",
   "license": "MIT",

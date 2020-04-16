@@ -1,0 +1,56 @@
+.contact {
+  color: $contact-field-color;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 3em;
+
+  &__title {
+    font-size: 3rem;
+    font-family: $contact-font-stack;
+    letter-spacing: 3px;
+    font-weight: 800;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    font-family: $font-stack;
+    letter-spacing: 1px;
+    margin-bottom: 1.8em;
+  }
+
+  & label {
+    font-size: 1.3rem;
+    padding-left: 0.6em;
+  }
+
+  & form .form-row {
+    margin-bottom: 2em;
+  }
+
+  & input,
+  & textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $contact-field-color;
+    outline: none;
+    box-shadow: none;
+    color: $contact-value-color;
+    font-size: 1.3rem;
+    font-family: $contact-font-stack;
+
+    &:focus {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid $contact-field-color;
+      outline: none;
+      box-shadow: none;
+      color: $contact-value-color;
+      font-size: 1.3rem;
+    }
+
+    &::placeholder {
+      color: $contact-placeholder-color;
+      font-size: 1.3rem;
+    }
+  }
+}
