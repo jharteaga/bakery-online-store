@@ -3,64 +3,64 @@
     "id": "1",
     "name": "Brownie",
     "description": "Sliced baked brownies on foiled tray! you won't resist it!",
-    "price": 4.99,
+    "price": "4.99",
     "stock": 10,
-    "image": "brownie.png"
+    "image": "brownie"
   },
   {
     "id": "2",
     "name": "Chocolate-Mint Bars",
     "description": "You'll love these thin chocolate-mint girl scout cookies or Andes candies!",
-    "price": 3.45,
+    "price": "3.45",
     "stock": 15,
-    "image": "choco-mint.jpg"
+    "image": "choco-mint"
   },
   {
     "id": "3",
     "name": "Lemon-Bluberry Cupcake",
     "description": "Studded with plump, juicy fresh berries. Fun cupcakes for any special occasions!",
-    "price": 2.25,
+    "price": "2.25",
     "stock": 12,
-    "image": "lemon-cupcake.jpg"
+    "image": "lemon-cupcake"
   },
   {
     "id": "4",
     "name": "Bourbon-Pecan Tart",
     "description": "Pecan pie is often purely sweet with no undertones, but the bourbon!",
-    "price": 6.0,
+    "price": "6.00",
     "stock": 8,
-    "image": "pecan.jpg"
+    "image": "pecan"
   },
   {
     "id": "5",
     "name": "Raspberry-Rhubarb Pie",
     "description": "Though a beloved pie classic, rhubarb has a strong tartness that sometimes needs moderating!",
-    "price": 6.5,
+    "price": "6.50",
     "stock": 6,
-    "image": "rhubarb.jpg"
+    "image": "rhubarb"
   },
   {
     "id": "6",
     "name": "Nathan's Lemon Cake",
     "description": "Wonderful texture, assertive lemon flavor, just enough richness and just enough icing!",
-    "price": 8.75,
+    "price": "8.75",
     "stock": 6,
-    "image": "lemno-cake.jpg"
+    "image": "lemon-cake"
   },
   {
     "id": "7",
     "name": "Hello Dolly Bars",
     "description": "The perfect dessert for taking along, well, just about anywhere!",
-    "price": 3.5,
+    "price": "3.50",
     "stock": 16,
-    "image": "dolly.jpg"
+    "image": "dolly"
   },
   {
     "id": "8",
     "name": "Vanilla Cheesecake",
     "description": "The seeds flavor the cheesecake, and the bean halves flavor the topping!",
-    "price": 5.99,
+    "price": "5.99",
     "stock": 9,
-    "image": "dolly.jpg"
+    "image": "cheesecake"
   }
 ]

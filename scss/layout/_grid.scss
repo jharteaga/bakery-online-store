@@ -25,18 +25,26 @@
 }
 
 /********************************************/
-/*             BAKERY GRID PAGE             */
+/*  BAKERY and DRINKS GRID PAGE             */
 /********************************************/
 
-.bakery {
+.bakery,
+.drinks {
   display: grid;
   grid-template-columns: repeat(4, auto);
   row-gap: 20px;
   column-gap: 30px;
   justify-content: center;
 
-  .bakery__row {
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }
