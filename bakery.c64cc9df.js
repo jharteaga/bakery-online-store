@@ -4,10 +4,10 @@ module.exports=[{id:"1",name:"Brownie",description:"Sliced baked brownies on foi
 module.exports="brownie.95cab8f6.jpg";
 },{}],"LBQW":[function(require,module,exports) {
 module.exports="cheesecake.ec7a2771.jpg";
-},{}],"Q6Lr":[function(require,module,exports) {
-module.exports="choco-mint.88436558.jpg";
 },{}],"hQzm":[function(require,module,exports) {
 module.exports="dolly.7eee0f04.jpg";
+},{}],"Q6Lr":[function(require,module,exports) {
+module.exports="choco-mint.88436558.jpg";
 },{}],"ffhd":[function(require,module,exports) {
 module.exports="lemon-cake.9d95620d.jpg";
 },{}],"Gcxk":[function(require,module,exports) {
@@ -17,8 +17,8 @@ module.exports="pecan.7dc176eb.jpg";
 },{}],"ZnJl":[function(require,module,exports) {
 module.exports="rhubarb.e8e14c3a.jpg";
 },{}],"cFyD":[function(require,module,exports) {
-module.exports={brownie:require("./brownie.jpg"),cheesecake:require("./cheesecake.jpg"),"choco-mint":require("./choco-mint.jpg"),dolly:require("./dolly.jpg"),"lemon-cake":require("./lemon-cake.jpg"),"lemon-cupcake":require("./lemon-cupcake.jpg"),pecan:require("./pecan.jpg"),rhubarb:require("./rhubarb.jpg")};
-},{"./brownie.jpg":"shdG","./cheesecake.jpg":"LBQW","./choco-mint.jpg":"Q6Lr","./dolly.jpg":"hQzm","./lemon-cake.jpg":"ffhd","./lemon-cupcake.jpg":"Gcxk","./pecan.jpg":"vQRw","./rhubarb.jpg":"ZnJl"}],"lzUr":[function(require,module,exports) {
+module.exports={brownie:require("./brownie.jpg"),cheesecake:require("./cheesecake.jpg"),dolly:require("./dolly.jpg"),"choco-mint":require("./choco-mint.jpg"),"lemon-cake":require("./lemon-cake.jpg"),"lemon-cupcake":require("./lemon-cupcake.jpg"),pecan:require("./pecan.jpg"),rhubarb:require("./rhubarb.jpg")};
+},{"./brownie.jpg":"shdG","./cheesecake.jpg":"LBQW","./dolly.jpg":"hQzm","./choco-mint.jpg":"Q6Lr","./lemon-cake.jpg":"ffhd","./lemon-cupcake.jpg":"Gcxk","./pecan.jpg":"vQRw","./rhubarb.jpg":"ZnJl"}],"lzUr":[function(require,module,exports) {
 "use strict";var a=n(require("../assets/data/bakery.json")),e=n(require("../assets/img/bakery/*.jpg"));function n(a){return a&&a.__esModule?a:{default:a}}var s=document.querySelector(".bakery"),r=function(){var n="";a.default.forEach(function(a){n+='\n        <div class="bakery__box">\n        <img\n          src="'.concat(e.default[a.image],'"\n          alt="Dessert Image"\n          class="bakery__img"\n        />\n        <h4 class="bakery__name">').concat(a.name,'</h4>\n        <p class="bakery__description">\n          ').concat(a.description,'\n        </p>\n        <div class="bakery__row">\n          <span class="bakery__price">$').concat(a.price,'</span>\n          <span class="bakery__cart"><i class="fas fa-cart-plus"></i></span>\n        </div>\n      </div>')}),s.innerHTML=n};r();
 },{"../assets/data/bakery.json":"poHE","../assets/img/bakery/*.jpg":"cFyD"}]},{},["lzUr"], null)
-//# sourceMappingURL=bakery.bfba8628.js.map
+//# sourceMappingURL=bakery.c64cc9df.js.map
