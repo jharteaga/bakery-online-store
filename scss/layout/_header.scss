@@ -4,6 +4,7 @@
     font-family: $logo-font-stack;
     font-size: $logo-size;
     padding-left: 0.5em;
+    order: 0;
 
     &::after {
       content: '... just tasty!';
@@ -15,6 +16,14 @@
       margin-top: -5px;
       letter-spacing: 2px;
     }
+  }
+
+  &__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   &__link {
@@ -64,6 +73,19 @@
   &__cart {
     width: 50px;
   }
+
+  &__hamburger {
+    background-color: transparent;
+    border: 0;
+    color: $text-color;
+    cursor: pointer;
+    font-size: 2rem;
+    display: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
 }
 
 /********************************************/
@@ -72,10 +94,6 @@
 
 @include mediaLg {
   .header {
-    &__nav {
-      width: 68%;
-    }
-
     &__link {
       font-size: 1rem;
       margin-right: 1em;
@@ -95,6 +113,97 @@
 
     &__cart {
       width: 45px;
+    }
+  }
+}
+
+@include mediaMd {
+  .header {
+    &__logo {
+      order: 1;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__nav {
+      justify-content: space-between;
+    }
+
+    &__menu {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0.5em;
+      margin-bottom: 0;
+      order: 10;
+    }
+
+    &__menu--show {
+      display: flex;
+    }
+
+    &__link {
+      margin-bottom: 0.5em;
+      font-weight: 600;
+      font-size: 1.5rem;
+
+      &--active a {
+        color: $contact-value-color;
+      }
+
+      &--active::after {
+        display: none;
+      }
+    }
+
+    &__counter {
+      order: 6;
+    }
+
+    &__hamburger {
+      display: block;
+      order: 0;
+    }
+  }
+}
+
+@include mediaSm {
+  .header {
+    &__logo {
+      font-size: 1.8rem;
+      padding: 0;
+
+      &::after {
+        margin-right: 0px;
+        margin-top: -5px;
+        letter-spacing: 2px;
+      }
+
+      &::after {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__link {
+      font-size: 1.05rem;
+    }
+
+    &__hamburger {
+      font-size: 1.6rem;
+    }
+
+    &__counter {
+      &::after {
+        font-size: 0.95rem;
+        margin-right: 0;
+        margin-left: 0em;
+      }
+    }
+
+    &__cart {
+      width: 35px;
     }
   }
 }
