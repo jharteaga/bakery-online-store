@@ -68,6 +68,10 @@
 }
 
 @include mediaSm {
+  .header {
+    padding-top: 1.5em;
+  }
+
   .bakery,
   .drinks {
     grid-template-columns: repeat(1, auto);
