@@ -33,7 +33,7 @@
   display: grid;
   grid-template-columns: repeat(4, auto);
   row-gap: 20px;
-  column-gap: 30px;
+  column-gap: 20px;
   justify-content: center;
 
   &__box {
@@ -46,5 +46,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+/********************************************/
+/*              MEDIA QUERIES               */
+/********************************************/
+
+@include mediaLg {
+  .header {
+    padding: 1.8em;
+  }
+
+  .bakery,
+  .drinks {
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+@include mediaMd {
+  .bakery,
+  .drinks {
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@include mediaSm {
+  .bakery,
+  .drinks {
+    grid-template-columns: repeat(1, auto);
   }
 }

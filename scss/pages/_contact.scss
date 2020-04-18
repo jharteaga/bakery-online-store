@@ -53,4 +53,23 @@
       font-size: 1.3rem;
     }
   }
+
+  &__send {
+    background-color: $contact-value-color;
+    width: 120px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: $contact-font-stack;
+    margin-bottom: 1.5em;
+  }
+}
+
+/********************************************/
+/*              MEDIA QUERIES               */
+/********************************************/
+
+@include mediaSm {
+  .contact__send {
+    width: 100%;
+  }
 }

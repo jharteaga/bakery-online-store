@@ -14,13 +14,13 @@ module.exports="irishwinter.ab334003.jpg";
 module.exports="italian.9d6ec222.jpg";
 },{}],"yqHW":[function(require,module,exports) {
 module.exports="kentucky.9d229351.jpg";
-},{}],"Khzp":[function(require,module,exports) {
-module.exports="pecanlatte.023cafd7.jpg";
 },{}],"c4nd":[function(require,module,exports) {
 module.exports="spanish.a9bea9e1.jpg";
+},{}],"Khzp":[function(require,module,exports) {
+module.exports="pecanlatte.023cafd7.jpg";
 },{}],"LN1x":[function(require,module,exports) {
-module.exports={brasileiro:require("./brasileiro.jpg"),caramelirish:require("./caramelirish.jpg"),caribbean:require("./caribbean.jpg"),irish:require("./irish.jpg"),irishwinter:require("./irishwinter.jpg"),italian:require("./italian.jpg"),kentucky:require("./kentucky.jpg"),pecanlatte:require("./pecanlatte.jpg"),spanish:require("./spanish.jpg")};
-},{"./brasileiro.jpg":"YFby","./caramelirish.jpg":"BH8I","./caribbean.jpg":"dnmD","./irish.jpg":"qQoG","./irishwinter.jpg":"N28Q","./italian.jpg":"uVMj","./kentucky.jpg":"yqHW","./pecanlatte.jpg":"Khzp","./spanish.jpg":"c4nd"}],"CEcI":[function(require,module,exports) {
+module.exports={brasileiro:require("./brasileiro.jpg"),caramelirish:require("./caramelirish.jpg"),caribbean:require("./caribbean.jpg"),irish:require("./irish.jpg"),irishwinter:require("./irishwinter.jpg"),italian:require("./italian.jpg"),kentucky:require("./kentucky.jpg"),spanish:require("./spanish.jpg"),pecanlatte:require("./pecanlatte.jpg")};
+},{"./brasileiro.jpg":"YFby","./caramelirish.jpg":"BH8I","./caribbean.jpg":"dnmD","./irish.jpg":"qQoG","./irishwinter.jpg":"N28Q","./italian.jpg":"uVMj","./kentucky.jpg":"yqHW","./spanish.jpg":"c4nd","./pecanlatte.jpg":"Khzp"}],"CEcI":[function(require,module,exports) {
 "use strict";var n=a(require("../assets/data/drinks.json")),s=a(require("../assets/img/drinks/*.jpg"));function a(n){return n&&n.__esModule?n:{default:n}}var i=document.querySelector(".drinks"),r=function(){var a="";n.default.forEach(function(n){a+='\n        <div class="drinks__box">\n        <img\n          src="'.concat(s.default[n.image],'"\n          alt="Dessert Image"\n          class="drinks__img"\n        />\n        <h4 class="drinks__name">').concat(n.name,'</h4>\n        <p class="drinks__description">\n          ').concat(n.description,'\n        </p>\n        <div class="drinks__row">\n          <span class="drinks__price">$').concat(n.price,'</span>\n          <span class="drinks__cart"><i class="fas fa-cart-plus"></i></span>\n        </div>\n      </div>')}),i.innerHTML=a};r();
 },{"../assets/data/drinks.json":"jk8E","../assets/img/drinks/*.jpg":"LN1x"}]},{},["CEcI"], null)
-//# sourceMappingURL=drinks.985d3350.js.map
+//# sourceMappingURL=drinks.5e81f0c0.js.map

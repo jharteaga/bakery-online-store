@@ -65,3 +65,36 @@
     width: 50px;
   }
 }
+
+/********************************************/
+/*              MEDIA QUERIES               */
+/********************************************/
+
+@include mediaLg {
+  .header {
+    &__nav {
+      width: 68%;
+    }
+
+    &__link {
+      font-size: 1rem;
+      margin-right: 1em;
+
+      &:nth-last-child(1) {
+        margin-right: 2em;
+      }
+    }
+
+    &__counter {
+      &::after {
+        font-size: 1rem;
+        margin-right: 2em;
+        margin-left: 0.6em;
+      }
+    }
+
+    &__cart {
+      width: 45px;
+    }
+  }
+}
