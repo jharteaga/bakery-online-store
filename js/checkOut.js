@@ -9,10 +9,9 @@ init();
 function init() {
   addCheckout();
   let removeBtns = document.querySelectorAll('.checkout__remove');
-  if (removeBtns[0].style.display === 'none') {
-    removeBtns = document.querySelectorAll('.checkout__trash');
-  }
+  let trashBtns = document.querySelectorAll('.checkout__trash');
   addRemoveEvents(removeBtns);
+  addRemoveEvents(trashBtns);
 }
 
 function addCheckout() {
@@ -44,7 +43,6 @@ function addCheckout() {
     </tr>        
     `;
   }
-
   checkout.innerHTML = output;
 }
 
@@ -62,8 +60,8 @@ function addRemoveEvents(removeBtns) {
           )
         )
       );
-      init();
       substractCounter();
+      init();
     });
   });
 }
