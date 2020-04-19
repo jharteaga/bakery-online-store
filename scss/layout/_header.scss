@@ -59,7 +59,7 @@
 
   &__counter {
     &::after {
-      content: '0';
+      content: attr(data-value);
       color: $text-color;
       font-size: 1.2rem;
       text-align: center;

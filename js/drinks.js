@@ -1,13 +1,17 @@
 import drinksData from '../assets/data/drinks.json';
 import images from '../assets/img/drinks/*.jpg';
+import { addCounter, addCheckOut } from './utils';
 
 const drinksContainer = document.querySelector('.drinks');
+export const drinksCheckOut = [];
 
-const addDrinks = () => {
+addDrinks();
+
+function addDrinks() {
   let output = '';
   drinksData.forEach((drink) => {
     output += `
-        <div class="drinks__box">
+        <div class="drinks__box" id="${drink.id}">
         <img
           src="${images[drink.image]}"
           alt="Dessert Image"
@@ -25,6 +29,17 @@ const addDrinks = () => {
   });
 
   drinksContainer.innerHTML = output;
-};
+}
 
-addDrinks();
+const drinksCarts = document.querySelectorAll('.drinks__cart');
+
+//Add event listeners
+drinksCarts.forEach((cart) => {
+  cart.addEventListener('click', () => {
+    let item = drinksData.filter(
+      (drink) => drink.id === cart.parentElement.parentElement.id
+    );
+    addCheckOut(item[0]);
+    addCounter();
+  });
+});

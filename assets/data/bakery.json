@@ -1,6 +1,7 @@
 [
   {
     "id": "1",
+    "type": "bakery",
     "name": "Brownie",
     "description": "Sliced baked brownies on foiled tray! you won't resist it!",
     "price": "4.99",
@@ -9,7 +10,8 @@
   },
   {
     "id": "2",
-    "name": "Chocolate-Mint Bars",
+    "type": "bakery",
+    "name": "Choco-Mint Bars",
     "description": "You'll love these thin chocolate-mint girl scout cookies or Andes candies!",
     "price": "3.45",
     "stock": 15,
@@ -17,6 +19,7 @@
   },
   {
     "id": "3",
+    "type": "bakery",
     "name": "Lemon-Bluberry Cupcake",
     "description": "Studded with plump, juicy fresh berries. Fun cupcakes for any special occasions!",
     "price": "2.25",
@@ -25,6 +28,7 @@
   },
   {
     "id": "4",
+    "type": "bakery",
     "name": "Bourbon-Pecan Tart",
     "description": "Pecan pie is often purely sweet with no undertones, but the bourbon!",
     "price": "6.00",
@@ -33,6 +37,7 @@
   },
   {
     "id": "5",
+    "type": "bakery",
     "name": "Raspberry-Rhubarb Pie",
     "description": "Though a beloved pie classic, rhubarb has a strong tartness that sometimes needs moderating!",
     "price": "6.50",
@@ -41,6 +46,7 @@
   },
   {
     "id": "6",
+    "type": "bakery",
     "name": "Nathan's Lemon Cake",
     "description": "Wonderful texture, assertive lemon flavor, just enough richness and just enough icing!",
     "price": "8.75",
@@ -49,6 +55,7 @@
   },
   {
     "id": "7",
+    "type": "bakery",
     "name": "Hello Dolly Bars",
     "description": "The perfect dessert for taking along, well, just about anywhere!",
     "price": "3.50",
@@ -57,6 +64,7 @@
   },
   {
     "id": "8",
+    "type": "bakery",
     "name": "Vanilla Cheesecake",
     "description": "The seeds flavor the cheesecake, and the bean halves flavor the topping!",
     "price": "5.99",

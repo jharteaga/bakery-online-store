@@ -1,0 +1,105 @@
+.checkout {
+  width: 75%;
+  max-width: 670px;
+  margin: 0 auto;
+  margin-top: 2em;
+
+  &__table {
+    color: black;
+    border-radius: 5px;
+  }
+
+  &__table th {
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: center;
+  }
+
+  &__table td {
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 300px;
+    margin: auto 0;
+  }
+
+  &__table img {
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  &__table td.checkout__empty {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 675px;
+  }
+
+  &__trash {
+    display: none !important;
+    font-size: 1.2rem;
+  }
+
+  &__remove {
+    display: block !important;
+  }
+}
+
+/********************************************/
+/*              MEDIA QUERIES               */
+/********************************************/
+
+@include mediaSm {
+  .checkout {
+    width: 90%;
+    text-align: center;
+    &__table {
+      margin: 0 auto;
+    }
+
+    &__table img {
+      width: 80px;
+      border-radius: 10px;
+    }
+
+    &__table th {
+      font-size: 1.3rem;
+      font-weight: 900;
+    }
+
+    &__table td {
+      font-size: 1em;
+      font-weight: 600;
+    }
+
+    &__remove {
+      display: none !important;
+    }
+
+    &__trash {
+      display: block !important;
+    }
+  }
+}
+
+@include mediaXs {
+  .checkout {
+    &__table img {
+      width: 60px;
+      border-radius: 10px;
+    }
+
+    &__table td {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    &__remove {
+      display: none;
+    }
+
+    &__trash {
+      display: block !important;
+      font-size: 1.15rem;
+    }
+  }
+}
