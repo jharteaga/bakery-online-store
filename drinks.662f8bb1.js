@@ -2,27 +2,27 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 module.exports=[{id:"1",type:"drink",name:"Irish Coffee",description:"It comes straight from 1940s Ireland and has set a huge standard!",price:"4.25",stock:30,image:"irish"},{id:"2",type:"drink",name:"Caramel Irish Coffee",description:"When you are in the mood for a creamy-textured, sweet, and delicious modern take on the Irish coffee!",price:"3.75",stock:25,image:"caramelirish"},{id:"3",type:"drink",name:"Irish Winter",description:"For this hot cocktail, pour a shot of Jameson and accent it with equal pours of Kahlúa and your favorite Irish cream.",price:"4.00",stock:20,image:"irishwinter"},{id:"4",type:"drink",name:"Flaming Spanish Coffee",description:"Have your coffee and liqueur of choice ready to pour. Then light an overproof rum on fire inside your glass and let it burn!",price:"4.99",stock:5,image:"spanish"},{id:"5",type:"drink",name:"Brasileiro Coffee",description:"Have you ever considered spiking your coffee with the Brazillian spirit cachaça? It's actually a fabulous idea!",price:"3.00",stock:19,image:"brasileiro"},{id:"6",type:"drink",name:"Caribbean Coffee",description:"The recipe spikes the best cup of coffee you can brew with rum and amaretto!",price:"5.75",stock:12,image:"caribbean"},{id:"7",type:"drink",name:"Italian Coffee",description:"Strega is a golden-colored, herbal liqueur that has a completely unique flavor!",price:"3.99",stock:15,image:"italian"},{id:"8",type:"drink",name:"Kentucky Coffee",description:"it's Wild Turkey 101, a whiskey that will not go unnoticed in your coffee!",price:"6.25",stock:10,image:"kentucky"}];
 },{}],"YFby":[function(require,module,exports) {
 module.exports="brasileiro.fca38682.jpg";
-},{}],"dnmD":[function(require,module,exports) {
-module.exports="caribbean.3e16482f.jpg";
 },{}],"BH8I":[function(require,module,exports) {
 module.exports="caramelirish.adef3078.jpg";
+},{}],"dnmD":[function(require,module,exports) {
+module.exports="caribbean.3e16482f.jpg";
 },{}],"qQoG":[function(require,module,exports) {
 module.exports="irish.88a6a56b.jpg";
-},{}],"uVMj":[function(require,module,exports) {
-module.exports="italian.9d6ec222.jpg";
 },{}],"N28Q":[function(require,module,exports) {
 module.exports="irishwinter.ab334003.jpg";
+},{}],"uVMj":[function(require,module,exports) {
+module.exports="italian.9d6ec222.jpg";
 },{}],"yqHW":[function(require,module,exports) {
 module.exports="kentucky.9d229351.jpg";
-},{}],"c4nd":[function(require,module,exports) {
-module.exports="spanish.a9bea9e1.jpg";
 },{}],"Khzp":[function(require,module,exports) {
 module.exports="pecanlatte.023cafd7.jpg";
+},{}],"c4nd":[function(require,module,exports) {
+module.exports="spanish.a9bea9e1.jpg";
 },{}],"LN1x":[function(require,module,exports) {
-module.exports={brasileiro:require("./brasileiro.jpg"),caribbean:require("./caribbean.jpg"),caramelirish:require("./caramelirish.jpg"),irish:require("./irish.jpg"),italian:require("./italian.jpg"),irishwinter:require("./irishwinter.jpg"),kentucky:require("./kentucky.jpg"),spanish:require("./spanish.jpg"),pecanlatte:require("./pecanlatte.jpg")};
-},{"./brasileiro.jpg":"YFby","./caribbean.jpg":"dnmD","./caramelirish.jpg":"BH8I","./irish.jpg":"qQoG","./italian.jpg":"uVMj","./irishwinter.jpg":"N28Q","./kentucky.jpg":"yqHW","./spanish.jpg":"c4nd","./pecanlatte.jpg":"Khzp"}],"MgTz":[function(require,module,exports) {
+module.exports={brasileiro:require("./brasileiro.jpg"),caramelirish:require("./caramelirish.jpg"),caribbean:require("./caribbean.jpg"),irish:require("./irish.jpg"),irishwinter:require("./irishwinter.jpg"),italian:require("./italian.jpg"),kentucky:require("./kentucky.jpg"),pecanlatte:require("./pecanlatte.jpg"),spanish:require("./spanish.jpg")};
+},{"./brasileiro.jpg":"YFby","./caramelirish.jpg":"BH8I","./caribbean.jpg":"dnmD","./irish.jpg":"qQoG","./irishwinter.jpg":"N28Q","./italian.jpg":"uVMj","./kentucky.jpg":"yqHW","./pecanlatte.jpg":"Khzp","./spanish.jpg":"c4nd"}],"MgTz":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.addCounter=t,exports.substractCounter=o,exports.addCheckOut=r;var e=document.querySelector(".header__counter");function t(){localStorage.setItem("counter",Number(localStorage.getItem("counter"))+1),e.setAttribute("data-value",localStorage.getItem("counter"))}function o(){localStorage.setItem("counter",Number(localStorage.getItem("counter"))-1),e.setAttribute("data-value",localStorage.getItem("counter"))}function r(e){var t=JSON.parse(localStorage.getItem("checkOut"));t.push(e),localStorage.setItem("checkOut",JSON.stringify(t))}
 },{}],"CEcI":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.drinksCheckOut=void 0;var n=s(require("../assets/data/drinks.json")),e=s(require("../assets/img/drinks/*.jpg")),r=require("./utils");function s(n){return n&&n.__esModule?n:{default:n}}var i=document.querySelector(".drinks"),t=[];function a(){var r="";n.default.forEach(function(n){r+='\n        <div class="drinks__box" id="'.concat(n.id,'">\n        <img\n          src="').concat(e.default[n.image],'"\n          alt="Dessert Image"\n          class="drinks__img"\n        />\n        <h4 class="drinks__name">').concat(n.name,'</h4>\n        <p class="drinks__description">\n          ').concat(n.description,'\n        </p>\n        <div class="drinks__row">\n          <span class="drinks__price">$').concat(n.price,'</span>\n          <span class="drinks__cart"><i class="fas fa-cart-plus"></i></span>\n        </div>\n      </div>')}),i.innerHTML=r}exports.drinksCheckOut=t,a();var c=document.querySelectorAll(".drinks__cart");c.forEach(function(e){e.addEventListener("click",function(){var s=n.default.filter(function(n){return n.id===e.parentElement.parentElement.id});(0,r.addCheckOut)(s[0]),(0,r.addCounter)()})});
 },{"../assets/data/drinks.json":"jk8E","../assets/img/drinks/*.jpg":"LN1x","./utils":"MgTz"}]},{},["CEcI"], null)
-//# sourceMappingURL=drinks.dc53a86f.js.map
+//# sourceMappingURL=drinks.662f8bb1.js.map
