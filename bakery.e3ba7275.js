@@ -2,12 +2,12 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 module.exports=[{id:"1",type:"bakery",name:"Brownie",description:"Sliced baked brownies on foiled tray! you won't resist it!",price:"4.99",stock:10,image:"brownie"},{id:"2",type:"bakery",name:"Chocolate-Mint Bars",description:"You'll love these thin chocolate-mint girl scout cookies or Andes candies!",price:"3.45",stock:15,image:"choco-mint"},{id:"3",type:"bakery",name:"Lemon-Bluberry Cupcake",description:"Studded with plump, juicy fresh berries. Fun cupcakes for any special occasions!",price:"2.25",stock:12,image:"lemon-cupcake"},{id:"4",type:"bakery",name:"Bourbon-Pecan Tart",description:"Pecan pie is often purely sweet with no undertones, but the bourbon!",price:"6.00",stock:8,image:"pecan"},{id:"5",type:"bakery",name:"Raspberry-Rhubarb Pie",description:"Though a beloved pie classic, rhubarb has a strong tartness that sometimes needs moderating!",price:"6.50",stock:6,image:"rhubarb"},{id:"6",type:"bakery",name:"Nathan's Lemon Cake",description:"Wonderful texture, assertive lemon flavor, just enough richness and just enough icing!",price:"8.75",stock:6,image:"lemon-cake"},{id:"7",type:"bakery",name:"Hello Dolly Bars",description:"The perfect dessert for taking along, well, just about anywhere!",price:"3.50",stock:16,image:"dolly"},{id:"8",type:"bakery",name:"Vanilla Cheesecake",description:"The seeds flavor the cheesecake, and the bean halves flavor the topping!",price:"5.99",stock:9,image:"cheesecake"}];
 },{}],"shdG":[function(require,module,exports) {
 module.exports="brownie.95cab8f6.jpg";
-},{}],"Q6Lr":[function(require,module,exports) {
-module.exports="choco-mint.88436558.jpg";
-},{}],"LBQW":[function(require,module,exports) {
-module.exports="cheesecake.ec7a2771.jpg";
 },{}],"hQzm":[function(require,module,exports) {
 module.exports="dolly.7eee0f04.jpg";
+},{}],"LBQW":[function(require,module,exports) {
+module.exports="cheesecake.ec7a2771.jpg";
+},{}],"Q6Lr":[function(require,module,exports) {
+module.exports="choco-mint.88436558.jpg";
 },{}],"ffhd":[function(require,module,exports) {
 module.exports="lemon-cake.9d95620d.jpg";
 },{}],"Gcxk":[function(require,module,exports) {
@@ -17,10 +17,10 @@ module.exports="pecan.7dc176eb.jpg";
 },{}],"ZnJl":[function(require,module,exports) {
 module.exports="rhubarb.e8e14c3a.jpg";
 },{}],"cFyD":[function(require,module,exports) {
-module.exports={brownie:require("./brownie.jpg"),"choco-mint":require("./choco-mint.jpg"),cheesecake:require("./cheesecake.jpg"),dolly:require("./dolly.jpg"),"lemon-cake":require("./lemon-cake.jpg"),"lemon-cupcake":require("./lemon-cupcake.jpg"),pecan:require("./pecan.jpg"),rhubarb:require("./rhubarb.jpg")};
-},{"./brownie.jpg":"shdG","./choco-mint.jpg":"Q6Lr","./cheesecake.jpg":"LBQW","./dolly.jpg":"hQzm","./lemon-cake.jpg":"ffhd","./lemon-cupcake.jpg":"Gcxk","./pecan.jpg":"vQRw","./rhubarb.jpg":"ZnJl"}],"MgTz":[function(require,module,exports) {
+module.exports={brownie:require("./brownie.jpg"),dolly:require("./dolly.jpg"),cheesecake:require("./cheesecake.jpg"),"choco-mint":require("./choco-mint.jpg"),"lemon-cake":require("./lemon-cake.jpg"),"lemon-cupcake":require("./lemon-cupcake.jpg"),pecan:require("./pecan.jpg"),rhubarb:require("./rhubarb.jpg")};
+},{"./brownie.jpg":"shdG","./dolly.jpg":"hQzm","./cheesecake.jpg":"LBQW","./choco-mint.jpg":"Q6Lr","./lemon-cake.jpg":"ffhd","./lemon-cupcake.jpg":"Gcxk","./pecan.jpg":"vQRw","./rhubarb.jpg":"ZnJl"}],"MgTz":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.addCounter=t,exports.substractCounter=o,exports.addCheckOut=r;var e=document.querySelector(".header__counter");function t(){localStorage.setItem("counter",Number(localStorage.getItem("counter"))+1),e.setAttribute("data-value",localStorage.getItem("counter"))}function o(){localStorage.setItem("counter",Number(localStorage.getItem("counter"))-1),e.setAttribute("data-value",localStorage.getItem("counter"))}function r(e){var t=JSON.parse(localStorage.getItem("checkOut"));t.push(e),localStorage.setItem("checkOut",JSON.stringify(t))}
 },{}],"lzUr":[function(require,module,exports) {
 "use strict";var e=r(require("../assets/data/bakery.json")),a=r(require("../assets/img/bakery/*.jpg")),n=require("./utils");function r(e){return e&&e.__esModule?e:{default:e}}var t=document.querySelector(".bakery");function c(){var n="";e.default.forEach(function(e){n+='\n        <div class="bakery__box" id="'.concat(e.id,'">\n        <img\n          src="').concat(a.default[e.image],'"\n          alt="Dessert Image"\n          class="bakery__img"\n        />\n        <h4 class="bakery__name">').concat(e.name,'</h4>\n        <p class="bakery__description">\n          ').concat(e.description,'\n        </p>\n        <div class="bakery__row">\n          <span class="bakery__price">$').concat(e.price,'</span>\n          <span class="bakery__cart"><i class="fas fa-cart-plus"></i></span>\n        </div>\n      </div>')}),t.innerHTML=n}c();var s=document.querySelectorAll(".bakery__cart");s.forEach(function(a){a.addEventListener("click",function(){var r=e.default.filter(function(e){return e.id===a.parentElement.parentElement.id});(0,n.addCheckOut)(r[0]),(0,n.addCounter)()})});
 },{"../assets/data/bakery.json":"poHE","../assets/img/bakery/*.jpg":"cFyD","./utils":"MgTz"}]},{},["lzUr"], null)
-//# sourceMappingURL=bakery.170c2d37.js.map
+//# sourceMappingURL=bakery.e3ba7275.js.map
