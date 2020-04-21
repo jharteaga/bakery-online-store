@@ -30,13 +30,13 @@ module.exports="irishwinter.ab334003.jpg";
 module.exports="italian.9d6ec222.jpg";
 },{}],"yqHW":[function(require,module,exports) {
 module.exports="kentucky.9d229351.jpg";
-},{}],"c4nd":[function(require,module,exports) {
-module.exports="spanish.a9bea9e1.jpg";
 },{}],"Khzp":[function(require,module,exports) {
 module.exports="pecanlatte.023cafd7.jpg";
+},{}],"c4nd":[function(require,module,exports) {
+module.exports="spanish.a9bea9e1.jpg";
 },{}],"LN1x":[function(require,module,exports) {
-module.exports={brasileiro:require("./brasileiro.jpg"),caramelirish:require("./caramelirish.jpg"),caribbean:require("./caribbean.jpg"),irish:require("./irish.jpg"),irishwinter:require("./irishwinter.jpg"),italian:require("./italian.jpg"),kentucky:require("./kentucky.jpg"),spanish:require("./spanish.jpg"),pecanlatte:require("./pecanlatte.jpg")};
-},{"./brasileiro.jpg":"YFby","./caramelirish.jpg":"BH8I","./caribbean.jpg":"dnmD","./irish.jpg":"qQoG","./irishwinter.jpg":"N28Q","./italian.jpg":"uVMj","./kentucky.jpg":"yqHW","./spanish.jpg":"c4nd","./pecanlatte.jpg":"Khzp"}],"MgTz":[function(require,module,exports) {
+module.exports={brasileiro:require("./brasileiro.jpg"),caramelirish:require("./caramelirish.jpg"),caribbean:require("./caribbean.jpg"),irish:require("./irish.jpg"),irishwinter:require("./irishwinter.jpg"),italian:require("./italian.jpg"),kentucky:require("./kentucky.jpg"),pecanlatte:require("./pecanlatte.jpg"),spanish:require("./spanish.jpg")};
+},{"./brasileiro.jpg":"YFby","./caramelirish.jpg":"BH8I","./caribbean.jpg":"dnmD","./irish.jpg":"qQoG","./irishwinter.jpg":"N28Q","./italian.jpg":"uVMj","./kentucky.jpg":"yqHW","./pecanlatte.jpg":"Khzp","./spanish.jpg":"c4nd"}],"MgTz":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.addCounter=t,exports.substractCounter=o,exports.addCheckOut=r;var e=document.querySelector(".header__counter");function t(){localStorage.setItem("counter",Number(localStorage.getItem("counter"))+1),e.setAttribute("data-value",localStorage.getItem("counter"))}function o(){localStorage.setItem("counter",Number(localStorage.getItem("counter"))-1),e.setAttribute("data-value",localStorage.getItem("counter"))}function r(e){var t=JSON.parse(localStorage.getItem("checkOut"));t.push(e),localStorage.setItem("checkOut",JSON.stringify(t))}
 },{}],"lwAM":[function(require,module,exports) {
 
@@ -52,4 +52,4 @@ var e;!function(e){e(["jquery"],function(e){return function(){var t,n,s,o=0,i={e
 },{"jquery":"HlZQ"}],"gCXL":[function(require,module,exports) {
 "use strict";var t=r(require("../assets/img/bakery/*.jpg")),e=r(require("../assets/img/drinks/*.jpg")),n=require("./utils"),o=r(require("toastr"));function r(t){return t&&t.__esModule?t:{default:t}}var a=document.querySelector(".checkout__body");function c(){s();var t=document.querySelectorAll(".checkout__remove"),e=document.querySelectorAll(".checkout__trash");u(t),u(e)}function s(){var n="",o=JSON.parse(localStorage.getItem("checkOut"));o.length>0?o.forEach(function(o,r){n+='\n        <tr class="table-responsive-sm">\n            <td><img src="'.concat("bakery"===o.type?t.default[o.image]:e.default[o.image],'" alt="Product Image" /></td>\n            <td>').concat(o.name,"</td>\n            <td>$").concat(o.price,'</td>\n            <td>\n              <i id="').concat(r,'" class="checkout__trash fas fa-trash-alt"></i>\n              <button id="').concat(r,'" class="btn btn-sm btn-danger checkout__remove">Remove</button>\n            </td>\n        </tr>        \n        ')}):n+='\n    <tr>\n        <td class="checkout__empty" colspan="4">Cart Empty</td>\n    </tr>        \n    ',a.innerHTML=n}function u(t){t.forEach(function(t){t.addEventListener("click",function(){var e=JSON.parse(localStorage.getItem("checkOut"));e.splice(t.id,1),localStorage.setItem("checkOut",JSON.stringify(e)),(0,n.substractCounter)(),o.default.error("Your item was removed from the cart.","Removed"),c()})})}o.default.options={closeButton:!1,debug:!1,newestOnTop:!0,progressBar:!1,positionClass:"toast-bottom-full-width",preventDuplicates:!1,onclick:null,showDuration:"300",hideDuration:"1000",timeOut:"2000",extendedTimeOut:"1000",showEasing:"swing",hideEasing:"linear",showMethod:"fadeIn",hideMethod:"fadeOut"},c();
 },{"../assets/img/bakery/*.jpg":"cFyD","../assets/img/drinks/*.jpg":"LN1x","./utils":"MgTz","toastr":"cfPU"}]},{},["gCXL"], null)
-//# sourceMappingURL=checkOut.ddb5aeac.js.map
+//# sourceMappingURL=checkOut.19f9e6b0.js.map

@@ -14,13 +14,13 @@ module.exports="irishwinter.ab334003.jpg";
 module.exports="italian.9d6ec222.jpg";
 },{}],"yqHW":[function(require,module,exports) {
 module.exports="kentucky.9d229351.jpg";
-},{}],"c4nd":[function(require,module,exports) {
-module.exports="spanish.a9bea9e1.jpg";
 },{}],"Khzp":[function(require,module,exports) {
 module.exports="pecanlatte.023cafd7.jpg";
+},{}],"c4nd":[function(require,module,exports) {
+module.exports="spanish.a9bea9e1.jpg";
 },{}],"LN1x":[function(require,module,exports) {
-module.exports={brasileiro:require("./brasileiro.jpg"),caramelirish:require("./caramelirish.jpg"),caribbean:require("./caribbean.jpg"),irish:require("./irish.jpg"),irishwinter:require("./irishwinter.jpg"),italian:require("./italian.jpg"),kentucky:require("./kentucky.jpg"),spanish:require("./spanish.jpg"),pecanlatte:require("./pecanlatte.jpg")};
-},{"./brasileiro.jpg":"YFby","./caramelirish.jpg":"BH8I","./caribbean.jpg":"dnmD","./irish.jpg":"qQoG","./irishwinter.jpg":"N28Q","./italian.jpg":"uVMj","./kentucky.jpg":"yqHW","./spanish.jpg":"c4nd","./pecanlatte.jpg":"Khzp"}],"MgTz":[function(require,module,exports) {
+module.exports={brasileiro:require("./brasileiro.jpg"),caramelirish:require("./caramelirish.jpg"),caribbean:require("./caribbean.jpg"),irish:require("./irish.jpg"),irishwinter:require("./irishwinter.jpg"),italian:require("./italian.jpg"),kentucky:require("./kentucky.jpg"),pecanlatte:require("./pecanlatte.jpg"),spanish:require("./spanish.jpg")};
+},{"./brasileiro.jpg":"YFby","./caramelirish.jpg":"BH8I","./caribbean.jpg":"dnmD","./irish.jpg":"qQoG","./irishwinter.jpg":"N28Q","./italian.jpg":"uVMj","./kentucky.jpg":"yqHW","./pecanlatte.jpg":"Khzp","./spanish.jpg":"c4nd"}],"MgTz":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.addCounter=t,exports.substractCounter=o,exports.addCheckOut=r;var e=document.querySelector(".header__counter");function t(){localStorage.setItem("counter",Number(localStorage.getItem("counter"))+1),e.setAttribute("data-value",localStorage.getItem("counter"))}function o(){localStorage.setItem("counter",Number(localStorage.getItem("counter"))-1),e.setAttribute("data-value",localStorage.getItem("counter"))}function r(e){var t=JSON.parse(localStorage.getItem("checkOut"));t.push(e),localStorage.setItem("checkOut",JSON.stringify(t))}
 },{}],"lwAM":[function(require,module,exports) {
 
@@ -36,4 +36,4 @@ var e;!function(e){e(["jquery"],function(e){return function(){var t,n,s,o=0,i={e
 },{"jquery":"HlZQ"}],"CEcI":[function(require,module,exports) {
 "use strict";var n=i(require("../assets/data/drinks.json")),e=i(require("../assets/img/drinks/*.jpg")),s=require("./utils"),t=i(require("toastr"));function i(n){return n&&n.__esModule?n:{default:n}}var a=document.querySelector(".drinks");function r(){var s="";n.default.forEach(function(n){s+='\n        <div class="drinks__box" id="'.concat(n.id,'">\n        <img\n          src="').concat(e.default[n.image],'"\n          alt="Dessert Image"\n          class="drinks__img"\n        />\n        <h4 class="drinks__name">').concat(n.name,'</h4>\n        <p class="drinks__description">\n          ').concat(n.description,'\n        </p>\n        <div class="drinks__row">\n          <span class="drinks__price">$').concat(n.price,'</span>\n          <span class="drinks__cart"><i class="fas fa-cart-plus"></i></span>\n        </div>\n      </div>')}),a.innerHTML=s}t.default.options={closeButton:!1,debug:!1,newestOnTop:!0,progressBar:!1,positionClass:"toast-bottom-full-width",preventDuplicates:!1,onclick:null,showDuration:"300",hideDuration:"1000",timeOut:"2000",extendedTimeOut:"1000",showEasing:"swing",hideEasing:"linear",showMethod:"fadeIn",hideMethod:"fadeOut"},r();var d=document.querySelectorAll(".drinks__cart");d.forEach(function(e){e.addEventListener("click",function(){var i=n.default.filter(function(n){return n.id===e.parentElement.parentElement.id});(0,s.addCheckOut)(i[0]),(0,s.addCounter)(),t.default.success("Check your cart.","Product added")})});
 },{"../assets/data/drinks.json":"jk8E","../assets/img/drinks/*.jpg":"LN1x","./utils":"MgTz","toastr":"cfPU"}]},{},["CEcI"], null)
-//# sourceMappingURL=drinks.5fba2319.js.map
+//# sourceMappingURL=drinks.5a21b7d9.js.map
